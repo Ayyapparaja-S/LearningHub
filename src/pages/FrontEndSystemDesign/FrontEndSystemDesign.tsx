@@ -7,7 +7,6 @@ import {
   Tab,
   Stack,
   Alert,
-  Button,
 } from '@mui/material';
 import { PhaseCard, ResourceSection } from '../../components';
 import { roadmapData, resourcesData } from '../../data/FrontEndSystemDesign';

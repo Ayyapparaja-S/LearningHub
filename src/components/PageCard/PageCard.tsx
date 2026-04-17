@@ -1,4 +1,4 @@
-import { Card, CardHeader, CardContent, CardActions, Box, Typography, Button, Stack } from '@mui/material';
+import { Card, CardHeader, CardContent, CardActions, Box, Typography, Button } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import type { HomeCard } from '../../pages/Home/types';
 
