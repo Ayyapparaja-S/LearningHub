@@ -10,7 +10,7 @@ export const Home = () => {
       <Container maxWidth="lg">
         <Grid container spacing={3}>
           {homePageData.cards.map((card) => (
-            <Grid item xs={12} sm={6} md={4} key={card.id}>
+            <Grid size={{ xs: 12, sm: 6, md: 4 }} key={card.id}>
               <PageCard card={card} />
             </Grid>
           ))}
