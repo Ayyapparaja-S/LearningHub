@@ -1,15 +1,7 @@
-export interface HomeCard {
-  id: number;
+export type TopicCard = {
+  icon: string;
   title: string;
-  description: string;
-  image: string;
-  link: string;
+  desc: string;
+  path: string;
   color: string;
-  accent: string;
-}
-
-export interface HomePageData {
-  title: string;
-  subtitle: string;
-  cards: HomeCard[];
-}
+};

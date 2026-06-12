@@ -7,7 +7,8 @@ import {
   Chip,
   Button,
   Typography,
-  Collapse
+  Collapse,
+  Link,
 } from '@mui/material';
 import { ChevronDownIcon, ChevronRightIcon } from '../Icons';
 import type { Phase } from '../../pages/FrontEndSystemDesign/types';
@@ -155,7 +156,20 @@ export const PhaseCard = ({ phase, isFirst = false }: PhaseCardProps) => {
                     >
                       {tIdx + 1}
                     </Box>
-                    <Typography variant="body2">{topic}</Typography>
+                    <Typography variant="body2">
+                      <Link
+                        href={`https://www.google.com/search?q=${encodeURIComponent(topic.split(' — ')[0].trim())}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        sx={{
+                          color: 'inherit',
+                          textDecoration: 'none',
+                          '&:hover': { color: phase.accent, textDecoration: 'underline' },
+                        }}
+                      >
+                        {topic}
+                      </Link>
+                    </Typography>
                   </Box>
                 ))}
               </Box>
