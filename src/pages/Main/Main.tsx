@@ -42,7 +42,7 @@ export default function Main() {
                 variant="outlined"
                 sx={{
                   p: 5,
-                  display: 'block',
+                  display: 'flex',
                   textDecoration: 'none',
                   color: 'inherit',
                   borderTop: 5,
@@ -50,7 +50,6 @@ export default function Main() {
                   transition: 'all 0.3s ease',
                   cursor: 'pointer',
                   minHeight: 300,
-                  display: 'flex',
                   flexDirection: 'column',
                   justifyContent: 'center',
                   '&:hover': {

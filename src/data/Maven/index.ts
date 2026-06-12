@@ -529,7 +529,7 @@ mvn clean install -T 1C    # 1 thread per CPU core
 &lt;!-- Solution: Extract shared code to a third module --&gt;
 
 &lt;!-- Flatten Maven Plugin (for CI/CD): --&gt;
-&lt;!-- Replace ${revision} with actual version for publishing --&gt;
+&lt;!-- Replace \${revision} with actual version for publishing --&gt;
 &lt;project&gt;
     &lt;version&gt;\${revision}&lt;/version&gt;
     &lt;properties&gt;

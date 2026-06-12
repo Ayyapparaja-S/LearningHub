@@ -173,7 +173,14 @@ function NavGroup({
           ...(isActive && { backgroundColor: 'rgba(56, 189, 248, 0.06)' }),
         }}
       >
-        <ListItemText primary={label} primaryTypographyProps={{ fontWeight: isActive ? 600 : 400 }} />
+        <ListItemText
+          primary={label}
+          slotProps={{
+            primary: {
+              sx: { fontWeight: isActive ? 600 : 400 },
+            },
+          }}
+        />
         {open ? <ExpandLessIcon fontSize="small" /> : <ExpandMoreIcon fontSize="small" />}
       </ListItemButton>
       <Collapse in={open} timeout="auto" unmountOnExit>
@@ -194,7 +201,14 @@ function NavGroup({
                 },
               }}
             >
-              <ListItemText primary={item.label} primaryTypographyProps={{ fontSize: '0.9rem' }} />
+              <ListItemText
+                primary={item.label}
+                slotProps={{
+                  primary: {
+                    sx: { fontSize: '0.9rem' },
+                  },
+                }}
+              />
             </ListItemButton>
           ))}
         </List>
